@@ -1,7 +1,7 @@
 # Project3Week13Malin
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network diagram depicted below.
 
 ![NetworkDiagram](https://github.com/bmalin77/Project3Week13Malin/blob/main/Network%20Diagram/ElkVM2.JPG)
 
