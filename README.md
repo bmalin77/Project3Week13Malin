@@ -110,9 +110,6 @@ run playbook
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 ![docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/elkdockerps.PNG)!
 
-azadmin@ELK-vNet2:~$ docker ps
-Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: dial unix /var/run/docker.sock: connect: permission denied
-azadmin@ELK-vNet2:~$ sudo su
 root@ELK-vNet2:/home/azadmin# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                              NAMES
 f450012e52ce        sebp/elk:761        "/usr/local/bin/star…"   3 days ago          Up 3 hours          0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elk
