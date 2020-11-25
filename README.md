@@ -3,11 +3,52 @@
 
 The files in this repository were used to configure the network depicted below.
 
+![NetworkDiagram](Network Diagrams/ElkVM.jpg)
+
 ![TODO: https://drive.google.com/file/d/1gyjdGoJz2C-sbTbQChQq0lsYV4prWo0x/view?usp=sharing
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the [install-elk.yml] file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: :-filebeat-playbook.yml, metricbeat-playbook.yml
+  ---
+- name: Installing and launching filebeat
+  hosts: elk
+  become: yes
+  tasks:
+
+    # Use command module
+  - name: Download filebeat deb
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
+
+    # Use command module
+  - name: Install filebeat deb
+    command: dpkg -i filebeat-7.6.1-amd64.deb
+
+    # Use copy module
+  - name: Drop in filebeat.yml
+    copy:
+      src: /etc/ansible/files/filebeat-config.yml
+      dest: /etc/filebeat/filebeat.yml
+ 
+    # Use command module
+  - name: Enable and configure system module
+    command: filebeat modules enable logstash
+
+    # Use command module
+  - name: Setup filebeat
+    command: filebeat setup
+
+    # Use command module
+  - name: Start filebeat service
+    command: sudo service filebeat start
+
+This document contains the following details:
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+  - Beats in Use
+  - Machines Being Monitored
+- How to Use the Ansible Build
 
 This document contains the following details:
 - Description of the Topologu
@@ -36,8 +77,8 @@ statistics that it collects and ships them to the output that you specify, such 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
+| Name     | Function        | IP Address | Operating System |
+|----------|-----------------|------------|------------------|
 | Jump Box | Gateway server  | 10.1.1.4   | Linux            |
 | Web 1    | Ubuntu server   | 10.1.1.5   | Linux            |
 | Web 2    | Ubuntu server   | 10.1.1.6   | Linux            |
