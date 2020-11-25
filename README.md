@@ -3,9 +3,9 @@
 
 The files in this repository were used to configure the network diagram depicted below.
 
-![NetworkDiagram](https://github.com/bmalin77/Project3Week13Malin/blob/main/Network%20Diagram/ElkVM2.JPG)!
+![NetworkDiagram](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/ElkVM2.JPG)!
 
-[Network Diagram](ElkVM2.JPG)
+[Network Diagram](Diagrams/ElkVM2.png)
 ![TODO: https://drive.google.com/file/d/1gyjdGoJz2C-sbTbQChQq0lsYV4prWo0x/view?usp=sharing
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the [install-elk.yml] file may be used to install only certain pieces of it, such as Filebeat.
