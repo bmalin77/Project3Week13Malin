@@ -116,6 +116,8 @@ The playbook implements the following tasks:
 run playbook
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+[docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/dockerps.png)
+
 azadmin@ELK-vNet2:~$ docker ps
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: dial unix /var/run/docker.sock: connect: permission denied
 azadmin@ELK-vNet2:~$ sudo su
