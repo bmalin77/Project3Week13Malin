@@ -114,9 +114,6 @@ root@ELK-vNet2:/home/azadmin# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                              NAMES
 f450012e52ce        sebp/elk:761        "/usr/local/bin/star…"   3 days ago          Up 3 hours          0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elk
 
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 List the IP addresses of the machines you are monitoring_
