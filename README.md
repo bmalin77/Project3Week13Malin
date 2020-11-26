@@ -3,15 +3,19 @@
 
 The files in this repository were used to configure the network diagram depicted below.
 
-![NetworkDiagram](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/ElkVM2.JPG)!
+[NetworkDiagram](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/ElkVM2.JPG)!
 
-[Network Diagram](Diagrams/ElkVM2.png
+<<<<<<< HEAD
+![ElkVM2](Diagrams/ElkVM2.png)
+=======
+![Network Diagram](Diagrams/ElkVM2.png)
+>>>>>>> f97c067c6e8c956f377c8fa82abf4e9fae3af929
 
-![TODO: https://drive.google.com/file/d/1gyjdGoJz2C-sbTbQChQq0lsYV4prWo0x/view?usp=sharing
+https://drive.google.com/file/d/1gyjdGoJz2C-sbTbQChQq0lsYV4prWo0x/view?usp=sharing
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the [install-elk.yml] file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: :-filebeat-playbook.yml, metricbeat-playbook.yml
+  -filebeat-playbook.yml, metricbeat-playbook.yml
   ---
 - name: Installing and launching filebeat
   hosts: elk
@@ -108,30 +112,24 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 run playbook
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/dockerps.png)!
+![docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/elkdockerps.PNG)!
 
-azadmin@ELK-vNet2:~$ docker ps
-Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/json: dial unix /var/run/docker.sock: connect: permission denied
-azadmin@ELK-vNet2:~$ sudo su
 root@ELK-vNet2:/home/azadmin# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                              NAMES
 f450012e52ce        sebp/elk:761        "/usr/local/bin/star…"   3 days ago          Up 3 hours          0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elk
 
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+List the IP addresses of the machines you are monitoring_
 Web 1 10.1.1.5
 Web 2 10.1.1.6
 ELK   10.2.0.4
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_metric and filebeat
+Specify which Beats you successfully installed_metric and filebeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 filebeat collects changes done and collects metrics and statistics
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -141,7 +139,7 @@ SSH into the control node and follow the steps below:
 - Update the config file to include the ip address
 - Run the playbook, and navigate to kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_ root@12988e292a61:/etc/ansible/roles# cat metricbeat-playbook.yml
 - _Which file do you update to make Ansible run the playbook on a specific machine? hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_update IP address on host file
 - _Which URL do you navigate to in order to check that the ELK server is running? http://20.186.38.101:5601/app/kibana
