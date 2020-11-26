@@ -5,8 +5,7 @@ The files in this repository were used to configure the network diagram depicted
 
 [NetworkDiagram](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/ElkVM2.JPG)!
 
-[Network Diagram](Diagrams/ElkVM2.png)
-![Diagram](Diagrams/ElkVM2.png)
+![Network Diagram](Diagrams/ElkVM2.png)
 
 https://drive.google.com/file/d/1gyjdGoJz2C-sbTbQChQq0lsYV4prWo0x/view?usp=sharing
 
