@@ -1,8 +1,5 @@
-root@12988e292a61:/etc/ansible# cat install-elk.yml
----
 - name: Configure Elk VM with Docker
   hosts: elk
-  remote_user: azadmin
   become: true
   tasks:
     # Use apt module

@@ -105,7 +105,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 run playbook
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/elkdockerps.PNG)!
+![docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/elkdockerps.PNG)
 
 root@ELK-vNet2:/home/azadmin# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                              NAMES
@@ -138,3 +138,4 @@ Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? http://20.186.38.101:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._ 
+
