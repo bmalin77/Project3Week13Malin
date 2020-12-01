@@ -105,7 +105,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 run playbook
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![docker ps](https://github.com/bmalin77/Project3Week13Malin/blob/main/Diagrams/elkdockerps.PNG)
+![docker ps](Diagrams/elkdockerps.PNG)
 
 root@ELK-vNet2:/home/azadmin# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                              NAMES
